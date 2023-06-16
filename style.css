@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero{
+    background-image: linear-gradient(to right, hsla(206, 34%, 21%, 0.69) 0%, #517fa4bf 100%), url("galeria/img.jpg");
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.textos-hero{
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-hero h1{
+    font-size: 60px;
+}
+.textos-hero p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-hero a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #00ffff;
+    border-radius: 8px;
+    color: #000000;
+}
+
+.svg-hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+
+.contenedor{
+    padding: 80px 0;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo.izquierda{
+    text-align: left;
+}
+
+.titulo.right{
+    text-align: right;
+}
+
+.website{
+    display: flex;
+    justify-content: space-between;
+}
+
+.website img{
+    width: 58%;
+}
+.website .contenedor-textos{
+    width: 45%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #00ffff, #00ffff, #00ffff 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #000000;
+}
+
+.info{
+    background: #00ffff;
+    color: #000000;
+}
+
+.contenido-cartas{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.carta{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.carta:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.carta i{
+    margin: 5px 0 15px 0;
+    color:#00ffff;
+    font-size: 50px;
+}
+
+.carta p{
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 10px 0 0 0;
+}
+
+.galery{
+    background: #979393;
+    border-radius: 15px;
+}
+
+.galeria-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.galeria-cont>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.ultima-seccion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+.ultima-seccion img{
+    width: 58%;
+}
+
+.ultima-seccion .contenedor-textos{
+    width: 40%;
+}
+
+
+footer{
+    background: #517fa4bf;
+    color: #fff;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding:  20px 10px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+}
+
+input[type="text"],
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color:#517fa4bf;
+    background: #fff;
+}
+
+@media screen and(max-width:800px) {
+    .textos-hero h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .titulo{
+        font-size: 35px;
+    }
+
+    .titulo.izquierda{
+        text-align: center;
+    }
+
+    .info p{
+        text-align: center;
+    }
+
+    .website{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img{
+        width: 100%;
+    }
+
+    .website .contenedor-textos{
+        width: 100%;
+    }
+
+    .carta{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .galeria-cont>img{
+        width: 48%;
+    }
+
+    .ultima-seccion img{
+        width: 98%;
+    }
+
+    .ultima-seccion .contenedor-textos{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+}
